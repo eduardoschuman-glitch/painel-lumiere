@@ -1,0 +1,1202 @@
+{
+ "fonte": "Meta Marketing API (conector Facebook)",
+ "atualizadoEm": "2026-10-19",
+ "periodo": {
+  "inicio": "2026-09-19",
+  "fim": "2026-10-18",
+  "rotulo": "Últimos 30 dias"
+ },
+ "anterior": {
+  "inicio": "2026-08-20",
+  "fim": "2026-09-18"
+ },
+ "visoes": {
+  "geral": {
+   "rotulo": "Visão geral",
+   "resumo": {
+    "investimento": 2706.81,
+    "impressoes": 315478,
+    "cliques": 2794,
+    "cliquesLink": 1022,
+    "resultados": 110,
+    "custoPorResultado": 21.63,
+    "cliquesLinkObj": 970,
+    "alcance": 104686
+   },
+   "anterior": {
+    "investimento": 2643.46,
+    "impressoes": 300739,
+    "cliques": 3755,
+    "cliquesLink": 1134,
+    "resultados": 90,
+    "custoPorResultado": 24.03,
+    "cliquesLinkObj": 688,
+    "alcance": 108639
+   },
+   "diario": [
+    {
+     "d": "09-19",
+     "gasto": 48.69,
+     "imp": 4648,
+     "cliques": 47,
+     "link": 12,
+     "resultados": 2
+    },
+    {
+     "d": "09-20",
+     "gasto": 0.0,
+     "imp": 0,
+     "cliques": 0,
+     "link": 0,
+     "resultados": 0
+    },
+    {
+     "d": "09-21",
+     "gasto": 30.11,
+     "imp": 2117,
+     "cliques": 27,
+     "link": 10,
+     "resultados": 3
+    },
+    {
+     "d": "09-22",
+     "gasto": 145.31,
+     "imp": 14480,
+     "cliques": 128,
+     "link": 25,
+     "resultados": 5
+    },
+    {
+     "d": "09-23",
+     "gasto": 108.1,
+     "imp": 9209,
+     "cliques": 85,
+     "link": 24,
+     "resultados": 2
+    },
+    {
+     "d": "09-24",
+     "gasto": 125.64,
+     "imp": 11808,
+     "cliques": 102,
+     "link": 34,
+     "resultados": 5
+    },
+    {
+     "d": "09-25",
+     "gasto": 131.79,
+     "imp": 11448,
+     "cliques": 122,
+     "link": 36,
+     "resultados": 8
+    },
+    {
+     "d": "09-26",
+     "gasto": 116.93,
+     "imp": 11667,
+     "cliques": 101,
+     "link": 26,
+     "resultados": 1
+    },
+    {
+     "d": "09-27",
+     "gasto": 63.07,
+     "imp": 6516,
+     "cliques": 66,
+     "link": 13,
+     "resultados": 4
+    },
+    {
+     "d": "09-28",
+     "gasto": 85.85,
+     "imp": 6503,
+     "cliques": 78,
+     "link": 21,
+     "resultados": 2
+    },
+    {
+     "d": "09-29",
+     "gasto": 71.69,
+     "imp": 4600,
+     "cliques": 49,
+     "link": 25,
+     "resultados": 7
+    },
+    {
+     "d": "09-30",
+     "gasto": 0.01,
+     "imp": 2,
+     "cliques": 0,
+     "link": 0,
+     "resultados": 1
+    },
+    {
+     "d": "10-01",
+     "gasto": 72.74,
+     "imp": 6887,
+     "cliques": 65,
+     "link": 17,
+     "resultados": 1
+    },
+    {
+     "d": "10-02",
+     "gasto": 163.5,
+     "imp": 18386,
+     "cliques": 180,
+     "link": 68,
+     "resultados": 9
+    },
+    {
+     "d": "10-03",
+     "gasto": 161.83,
+     "imp": 21745,
+     "cliques": 186,
+     "link": 74,
+     "resultados": 8
+    },
+    {
+     "d": "10-04",
+     "gasto": 83.29,
+     "imp": 15544,
+     "cliques": 124,
+     "link": 44,
+     "resultados": 1
+    },
+    {
+     "d": "10-05",
+     "gasto": 64.75,
+     "imp": 9810,
+     "cliques": 69,
+     "link": 30,
+     "resultados": 5
+    },
+    {
+     "d": "10-06",
+     "gasto": 154.74,
+     "imp": 18446,
+     "cliques": 155,
+     "link": 69,
+     "resultados": 3
+    },
+    {
+     "d": "10-07",
+     "gasto": 102.06,
+     "imp": 12400,
+     "cliques": 124,
+     "link": 54,
+     "resultados": 4
+    },
+    {
+     "d": "10-08",
+     "gasto": 75.59,
+     "imp": 10093,
+     "cliques": 78,
+     "link": 30,
+     "resultados": 1
+    },
+    {
+     "d": "10-09",
+     "gasto": 68.48,
+     "imp": 9781,
+     "cliques": 95,
+     "link": 35,
+     "resultados": 3
+    },
+    {
+     "d": "10-10",
+     "gasto": 109.8,
+     "imp": 15075,
+     "cliques": 121,
+     "link": 52,
+     "resultados": 6
+    },
+    {
+     "d": "10-11",
+     "gasto": 81.89,
+     "imp": 12005,
+     "cliques": 95,
+     "link": 53,
+     "resultados": 4
+    },
+    {
+     "d": "10-12",
+     "gasto": 50.03,
+     "imp": 10424,
+     "cliques": 82,
+     "link": 24,
+     "resultados": 1
+    },
+    {
+     "d": "10-13",
+     "gasto": 139.77,
+     "imp": 15856,
+     "cliques": 140,
+     "link": 68,
+     "resultados": 4
+    },
+    {
+     "d": "10-14",
+     "gasto": 137.95,
+     "imp": 14607,
+     "cliques": 126,
+     "link": 55,
+     "resultados": 8
+    },
+    {
+     "d": "10-15",
+     "gasto": 93.82,
+     "imp": 11597,
+     "cliques": 82,
+     "link": 27,
+     "resultados": 2
+    },
+    {
+     "d": "10-16",
+     "gasto": 88.97,
+     "imp": 11289,
+     "cliques": 117,
+     "link": 43,
+     "resultados": 3
+    },
+    {
+     "d": "10-17",
+     "gasto": 64.65,
+     "imp": 8768,
+     "cliques": 73,
+     "link": 30,
+     "resultados": 5
+    },
+    {
+     "d": "10-18",
+     "gasto": 65.76,
+     "imp": 9767,
+     "cliques": 77,
+     "link": 23,
+     "resultados": 2
+    }
+   ],
+   "campanhas": [
+    {
+     "id": "120241284996640452",
+     "nome": "Instituto lumière (0452)",
+     "gasto": 1084.66,
+     "imp": 112006,
+     "alcance": 33185,
+     "cliques": 1128,
+     "link": 597,
+     "freq": 3.38,
+     "resultado": 47,
+     "tipo": "Conversas iniciadas",
+     "custoResultado": 23.08,
+     "msg": true
+    },
+    {
+     "id": "120236691317800452",
+     "nome": "Instituto lumière (0452)",
+     "gasto": 1295.05,
+     "imp": 63402,
+     "alcance": 17746,
+     "cliques": 809,
+     "link": 373,
+     "freq": 3.57,
+     "resultado": 63,
+     "tipo": "Conversas iniciadas",
+     "custoResultado": 20.56,
+     "msg": true
+    },
+    {
+     "id": "120236383346960452",
+     "nome": "V&v",
+     "gasto": 176.85,
+     "imp": 52166,
+     "alcance": 33043,
+     "cliques": 680,
+     "link": null,
+     "freq": 1.58,
+     "resultado": 10754,
+     "tipo": "ThruPlays",
+     "custoResultado": 0.02,
+     "msg": false
+    },
+    {
+     "id": "120236381882760452",
+     "nome": "Topo",
+     "gasto": 150.25,
+     "imp": 87904,
+     "alcance": 56744,
+     "cliques": 177,
+     "link": 52,
+     "freq": 1.55,
+     "resultado": 56744,
+     "tipo": "Alcance",
+     "custoResultado": 2.65,
+     "msg": false
+    }
+   ],
+   "anuncios": [
+    {
+     "id": "120247888993310452",
+     "nome": "Implantes arte | oportunidade",
+     "gasto": 831.8,
+     "imp": 87613,
+     "cliques": 801,
+     "link": 488,
+     "ctrLink": 0.56,
+     "resultados": 29,
+     "custoResultado": 28.68,
+     "msg": true
+    },
+    {
+     "id": "120248000572020452",
+     "nome": "SCANNER INTRAORAL 34s | CONFORTO v2",
+     "gasto": 367.8,
+     "imp": 16803,
+     "cliques": 175,
+     "link": 64,
+     "ctrLink": 0.38,
+     "resultados": 10,
+     "custoResultado": 36.78,
+     "msg": true
+    },
+    {
+     "id": "120238058704310452",
+     "nome": "11",
+     "gasto": 250.21,
+     "imp": 15655,
+     "cliques": 166,
+     "link": 64,
+     "ctrLink": 0.41,
+     "resultados": 15,
+     "custoResultado": 16.68,
+     "msg": true
+    },
+    {
+     "id": "120248321753960452",
+     "nome": "1 ANO LUMIERE 26s | ANIVERSARIO OUTUBRO",
+     "gasto": 209.03,
+     "imp": 8943,
+     "cliques": 128,
+     "link": 47,
+     "ctrLink": 0.53,
+     "resultados": 9,
+     "custoResultado": 23.23,
+     "msg": true
+    },
+    {
+     "id": "120247800212370452",
+     "nome": "GABRIEL SISO 90s | v2 TEXTO CURTO",
+     "gasto": 171.3,
+     "imp": 16329,
+     "cliques": 206,
+     "link": 49,
+     "ctrLink": 0.3,
+     "resultados": 6,
+     "custoResultado": 28.55,
+     "msg": true
+    },
+    {
+     "id": "120247800548680452",
+     "nome": "JEAN HUMORISTA 55s | v2",
+     "gasto": 159.48,
+     "imp": 49669,
+     "cliques": 650,
+     "link": 0,
+     "ctrLink": 0.0,
+     "resultados": 0,
+     "custoResultado": null,
+     "msg": false
+    },
+    {
+     "id": "120245520562960452",
+     "nome": "01",
+     "gasto": 154.72,
+     "imp": 6113,
+     "cliques": 147,
+     "link": 117,
+     "ctrLink": 1.91,
+     "resultados": 11,
+     "custoResultado": 14.07,
+     "msg": true
+    },
+    {
+     "id": "120247999461860452",
+     "nome": "Zigomatico falta de osso | retomada do 04",
+     "gasto": 134.95,
+     "imp": 4335,
+     "cliques": 54,
+     "link": 21,
+     "ctrLink": 0.48,
+     "resultados": 7,
+     "custoResultado": 19.28,
+     "msg": true
+    },
+    {
+     "id": "120247609829740452",
+     "nome": "Pais",
+     "gasto": 103.34,
+     "imp": 58404,
+     "cliques": 139,
+     "link": 22,
+     "ctrLink": 0.04,
+     "resultados": 0,
+     "custoResultado": null,
+     "msg": false
+    },
+    {
+     "id": "120245520562930452",
+     "nome": "02",
+     "gasto": 67.09,
+     "imp": 2676,
+     "cliques": 36,
+     "link": 18,
+     "ctrLink": 0.67,
+     "resultados": 4,
+     "custoResultado": 16.77,
+     "msg": true
+    },
+    {
+     "id": "120248424335410452",
+     "nome": "ATENCAO APOSENTADO MAFRA | PROTOCOLO | 4x5 + 9x16",
+     "gasto": 64.65,
+     "imp": 7292,
+     "cliques": 106,
+     "link": 53,
+     "ctrLink": 0.73,
+     "resultados": 8,
+     "custoResultado": 8.08,
+     "msg": true
+    },
+    {
+     "id": "120247878072340452",
+     "nome": "DEPOIMENTO SENHOR 53s | PROTOCOLO",
+     "gasto": 38.67,
+     "imp": 3792,
+     "cliques": 51,
+     "link": 12,
+     "ctrLink": 0.32,
+     "resultados": 2,
+     "custoResultado": 19.34,
+     "msg": true
+    },
+    {
+     "id": "120248321755100452",
+     "nome": "1 ANO LUMIERE 26s | ANIVERSARIO OUTUBRO",
+     "gasto": 28.42,
+     "imp": 2167,
+     "cliques": 21,
+     "link": 10,
+     "ctrLink": 0.46,
+     "resultados": 1,
+     "custoResultado": 28.42,
+     "msg": true
+    },
+    {
+     "id": "120236392855170452",
+     "nome": "03",
+     "gasto": 23.83,
+     "imp": 14924,
+     "cliques": 16,
+     "link": 13,
+     "ctrLink": 0.09,
+     "resultados": 0,
+     "custoResultado": null,
+     "msg": false
+    },
+    {
+     "id": "120247891366850452",
+     "nome": "Rmk | acolhimento 02",
+     "gasto": 16.91,
+     "imp": 772,
+     "cliques": 15,
+     "link": 7,
+     "ctrLink": 0.91,
+     "resultados": 4,
+     "custoResultado": 4.23,
+     "msg": true
+    },
+    {
+     "id": "120240593254060452",
+     "nome": "15",
+     "gasto": 16.74,
+     "imp": 1065,
+     "cliques": 10,
+     "link": 6,
+     "ctrLink": 0.56,
+     "resultados": 0,
+     "custoResultado": null,
+     "msg": true
+    },
+    {
+     "id": "120247004202020452",
+     "nome": "19",
+     "gasto": 16.52,
+     "imp": 1001,
+     "cliques": 10,
+     "link": 5,
+     "ctrLink": 0.5,
+     "resultados": 3,
+     "custoResultado": 5.51,
+     "msg": true
+    },
+    {
+     "id": "120236382205310452",
+     "nome": "02",
+     "gasto": 14.24,
+     "imp": 8929,
+     "cliques": 12,
+     "link": 11,
+     "ctrLink": 0.12,
+     "resultados": 0,
+     "custoResultado": null,
+     "msg": false
+    },
+    {
+     "id": "120239258461190452",
+     "nome": "11",
+     "gasto": 9.35,
+     "imp": 1950,
+     "cliques": 25,
+     "link": 0,
+     "ctrLink": 0.0,
+     "resultados": 0,
+     "custoResultado": null,
+     "msg": false
+    },
+    {
+     "id": "120240593176510452",
+     "nome": "14",
+     "gasto": 8.99,
+     "imp": 755,
+     "cliques": 10,
+     "link": 8,
+     "ctrLink": 1.06,
+     "resultados": 1,
+     "custoResultado": 8.99,
+     "msg": true
+    },
+    {
+     "id": "120247608646090452",
+     "nome": "05",
+     "gasto": 7.72,
+     "imp": 491,
+     "cliques": 2,
+     "link": 0,
+     "ctrLink": 0.0,
+     "resultados": 0,
+     "custoResultado": null,
+     "msg": false
+    },
+    {
+     "id": "120236394130360452",
+     "nome": "04",
+     "gasto": 6.15,
+     "imp": 3967,
+     "cliques": 7,
+     "link": 5,
+     "ctrLink": 0.13,
+     "resultados": 0,
+     "custoResultado": null,
+     "msg": false
+    },
+    {
+     "id": "120247740849620452",
+     "nome": "21",
+     "gasto": 1.91,
+     "imp": 97,
+     "cliques": 1,
+     "link": 1,
+     "ctrLink": 1.03,
+     "resultados": 0,
+     "custoResultado": null,
+     "msg": true
+    },
+    {
+     "id": "120241286049360452",
+     "nome": "07",
+     "gasto": 1.64,
+     "imp": 1046,
+     "cliques": 2,
+     "link": 1,
+     "ctrLink": 0.1,
+     "resultados": 0,
+     "custoResultado": null,
+     "msg": false
+    },
+    {
+     "id": "120239258408210452",
+     "nome": "06",
+     "gasto": 1.05,
+     "imp": 634,
+     "cliques": 1,
+     "link": 0,
+     "ctrLink": 0.0,
+     "resultados": 0,
+     "custoResultado": null,
+     "msg": false
+    },
+    {
+     "id": "120238956585820452",
+     "nome": "10",
+     "gasto": 0.17,
+     "imp": 32,
+     "cliques": 2,
+     "link": 0,
+     "ctrLink": 0.0,
+     "resultados": 0,
+     "custoResultado": null,
+     "msg": false
+    },
+    {
+     "id": "120240594182980452",
+     "nome": "01",
+     "gasto": 0.0,
+     "imp": 0,
+     "cliques": 0,
+     "link": 0,
+     "ctrLink": 0,
+     "resultados": 0,
+     "custoResultado": null,
+     "msg": false
+    }
+   ],
+   "funil": {
+    "impressoes": 175408,
+    "cliquesLink": 970,
+    "resultados": 110
+   }
+  },
+  "mensagens": {
+   "rotulo": "Mensagens",
+   "resumo": {
+    "investimento": 2379.71,
+    "impressoes": 175408,
+    "cliques": 1937,
+    "cliquesLink": 970,
+    "resultados": 110,
+    "custoPorResultado": 21.63,
+    "cliquesLinkObj": 970
+   },
+   "anterior": {
+    "investimento": 2163.05,
+    "impressoes": 156284,
+    "cliques": 2518,
+    "cliquesLink": 688,
+    "resultados": 90,
+    "custoPorResultado": 24.03,
+    "cliquesLinkObj": 688
+   },
+   "diario": [
+    {
+     "d": "09-19",
+     "gasto": 42.19,
+     "resultados": 2
+    },
+    {
+     "d": "09-20",
+     "gasto": 0.0,
+     "resultados": 0
+    },
+    {
+     "d": "09-21",
+     "gasto": 26.85,
+     "resultados": 3
+    },
+    {
+     "d": "09-22",
+     "gasto": 127.93,
+     "resultados": 5
+    },
+    {
+     "d": "09-23",
+     "gasto": 96.98,
+     "resultados": 2
+    },
+    {
+     "d": "09-24",
+     "gasto": 107.37,
+     "resultados": 5
+    },
+    {
+     "d": "09-25",
+     "gasto": 115.98,
+     "resultados": 8
+    },
+    {
+     "d": "09-26",
+     "gasto": 104.73,
+     "resultados": 1
+    },
+    {
+     "d": "09-27",
+     "gasto": 51.73,
+     "resultados": 4
+    },
+    {
+     "d": "09-28",
+     "gasto": 73.71,
+     "resultados": 2
+    },
+    {
+     "d": "09-29",
+     "gasto": 67.98,
+     "resultados": 7
+    },
+    {
+     "d": "09-30",
+     "gasto": 0.01,
+     "resultados": 1
+    },
+    {
+     "d": "10-01",
+     "gasto": 63.33,
+     "resultados": 1
+    },
+    {
+     "d": "10-02",
+     "gasto": 144.14,
+     "resultados": 9
+    },
+    {
+     "d": "10-03",
+     "gasto": 143.54,
+     "resultados": 8
+    },
+    {
+     "d": "10-04",
+     "gasto": 69.17,
+     "resultados": 1
+    },
+    {
+     "d": "10-05",
+     "gasto": 55.84,
+     "resultados": 5
+    },
+    {
+     "d": "10-06",
+     "gasto": 142.69,
+     "resultados": 3
+    },
+    {
+     "d": "10-07",
+     "gasto": 92.53,
+     "resultados": 4
+    },
+    {
+     "d": "10-08",
+     "gasto": 67.9,
+     "resultados": 1
+    },
+    {
+     "d": "10-09",
+     "gasto": 58.49,
+     "resultados": 3
+    },
+    {
+     "d": "10-10",
+     "gasto": 93.97,
+     "resultados": 6
+    },
+    {
+     "d": "10-11",
+     "gasto": 69.06,
+     "resultados": 4
+    },
+    {
+     "d": "10-12",
+     "gasto": 37.59,
+     "resultados": 1
+    },
+    {
+     "d": "10-13",
+     "gasto": 131.56,
+     "resultados": 4
+    },
+    {
+     "d": "10-14",
+     "gasto": 124.95,
+     "resultados": 8
+    },
+    {
+     "d": "10-15",
+     "gasto": 82.44,
+     "resultados": 2
+    },
+    {
+     "d": "10-16",
+     "gasto": 78.08,
+     "resultados": 3
+    },
+    {
+     "d": "10-17",
+     "gasto": 55.21,
+     "resultados": 5
+    },
+    {
+     "d": "10-18",
+     "gasto": 53.76,
+     "resultados": 2
+    }
+   ],
+   "campanhas": [
+    {
+     "id": "120241284996640452",
+     "nome": "Instituto lumière (0452)",
+     "gasto": 1084.66,
+     "imp": 112006,
+     "alcance": 33185,
+     "cliques": 1128,
+     "link": 597,
+     "freq": 3.38,
+     "resultado": 47,
+     "tipo": "Conversas iniciadas",
+     "custoResultado": 23.08,
+     "msg": true
+    },
+    {
+     "id": "120236691317800452",
+     "nome": "Instituto lumière (0452)",
+     "gasto": 1295.05,
+     "imp": 63402,
+     "alcance": 17746,
+     "cliques": 809,
+     "link": 373,
+     "freq": 3.57,
+     "resultado": 63,
+     "tipo": "Conversas iniciadas",
+     "custoResultado": 20.56,
+     "msg": true
+    }
+   ],
+   "anuncios": [
+    {
+     "id": "120247888993310452",
+     "nome": "Implantes arte | oportunidade",
+     "gasto": 831.8,
+     "imp": 87613,
+     "cliques": 801,
+     "link": 488,
+     "ctrLink": 0.56,
+     "resultados": 29,
+     "custoResultado": 28.68,
+     "msg": true
+    },
+    {
+     "id": "120248000572020452",
+     "nome": "SCANNER INTRAORAL 34s | CONFORTO v2",
+     "gasto": 367.8,
+     "imp": 16803,
+     "cliques": 175,
+     "link": 64,
+     "ctrLink": 0.38,
+     "resultados": 10,
+     "custoResultado": 36.78,
+     "msg": true
+    },
+    {
+     "id": "120238058704310452",
+     "nome": "11",
+     "gasto": 250.21,
+     "imp": 15655,
+     "cliques": 166,
+     "link": 64,
+     "ctrLink": 0.41,
+     "resultados": 15,
+     "custoResultado": 16.68,
+     "msg": true
+    },
+    {
+     "id": "120248321753960452",
+     "nome": "1 ANO LUMIERE 26s | ANIVERSARIO OUTUBRO",
+     "gasto": 209.03,
+     "imp": 8943,
+     "cliques": 128,
+     "link": 47,
+     "ctrLink": 0.53,
+     "resultados": 9,
+     "custoResultado": 23.23,
+     "msg": true
+    },
+    {
+     "id": "120247800212370452",
+     "nome": "GABRIEL SISO 90s | v2 TEXTO CURTO",
+     "gasto": 171.3,
+     "imp": 16329,
+     "cliques": 206,
+     "link": 49,
+     "ctrLink": 0.3,
+     "resultados": 6,
+     "custoResultado": 28.55,
+     "msg": true
+    },
+    {
+     "id": "120245520562960452",
+     "nome": "01",
+     "gasto": 154.72,
+     "imp": 6113,
+     "cliques": 147,
+     "link": 117,
+     "ctrLink": 1.91,
+     "resultados": 11,
+     "custoResultado": 14.07,
+     "msg": true
+    },
+    {
+     "id": "120247999461860452",
+     "nome": "Zigomatico falta de osso | retomada do 04",
+     "gasto": 134.95,
+     "imp": 4335,
+     "cliques": 54,
+     "link": 21,
+     "ctrLink": 0.48,
+     "resultados": 7,
+     "custoResultado": 19.28,
+     "msg": true
+    },
+    {
+     "id": "120245520562930452",
+     "nome": "02",
+     "gasto": 67.09,
+     "imp": 2676,
+     "cliques": 36,
+     "link": 18,
+     "ctrLink": 0.67,
+     "resultados": 4,
+     "custoResultado": 16.77,
+     "msg": true
+    },
+    {
+     "id": "120248424335410452",
+     "nome": "ATENCAO APOSENTADO MAFRA | PROTOCOLO | 4x5 + 9x16",
+     "gasto": 64.65,
+     "imp": 7292,
+     "cliques": 106,
+     "link": 53,
+     "ctrLink": 0.73,
+     "resultados": 8,
+     "custoResultado": 8.08,
+     "msg": true
+    },
+    {
+     "id": "120247878072340452",
+     "nome": "DEPOIMENTO SENHOR 53s | PROTOCOLO",
+     "gasto": 38.67,
+     "imp": 3792,
+     "cliques": 51,
+     "link": 12,
+     "ctrLink": 0.32,
+     "resultados": 2,
+     "custoResultado": 19.34,
+     "msg": true
+    },
+    {
+     "id": "120248321755100452",
+     "nome": "1 ANO LUMIERE 26s | ANIVERSARIO OUTUBRO",
+     "gasto": 28.42,
+     "imp": 2167,
+     "cliques": 21,
+     "link": 10,
+     "ctrLink": 0.46,
+     "resultados": 1,
+     "custoResultado": 28.42,
+     "msg": true
+    },
+    {
+     "id": "120247891366850452",
+     "nome": "Rmk | acolhimento 02",
+     "gasto": 16.91,
+     "imp": 772,
+     "cliques": 15,
+     "link": 7,
+     "ctrLink": 0.91,
+     "resultados": 4,
+     "custoResultado": 4.23,
+     "msg": true
+    },
+    {
+     "id": "120240593254060452",
+     "nome": "15",
+     "gasto": 16.74,
+     "imp": 1065,
+     "cliques": 10,
+     "link": 6,
+     "ctrLink": 0.56,
+     "resultados": 0,
+     "custoResultado": null,
+     "msg": true
+    },
+    {
+     "id": "120247004202020452",
+     "nome": "19",
+     "gasto": 16.52,
+     "imp": 1001,
+     "cliques": 10,
+     "link": 5,
+     "ctrLink": 0.5,
+     "resultados": 3,
+     "custoResultado": 5.51,
+     "msg": true
+    },
+    {
+     "id": "120240593176510452",
+     "nome": "14",
+     "gasto": 8.99,
+     "imp": 755,
+     "cliques": 10,
+     "link": 8,
+     "ctrLink": 1.06,
+     "resultados": 1,
+     "custoResultado": 8.99,
+     "msg": true
+    },
+    {
+     "id": "120247740849620452",
+     "nome": "21",
+     "gasto": 1.91,
+     "imp": 97,
+     "cliques": 1,
+     "link": 1,
+     "ctrLink": 1.03,
+     "resultados": 0,
+     "custoResultado": null,
+     "msg": true
+    }
+   ],
+   "funil": {
+    "impressoes": 175408,
+    "cliquesLink": 970,
+    "resultados": 110
+   }
+  }
+ },
+ "idade": [
+  {
+   "faixa": "18-24",
+   "mulheres": {
+    "gasto": 19.24,
+    "imp": 11090,
+    "cliques": 12,
+    "alcance": 6872
+   },
+   "homens": {
+    "gasto": 14.57,
+    "imp": 8349,
+    "cliques": 9,
+    "alcance": 5258
+   }
+  },
+  {
+   "faixa": "25-34",
+   "mulheres": {
+    "gasto": 84.56,
+    "imp": 18451,
+    "cliques": 94,
+    "alcance": 9779
+   },
+   "homens": {
+    "gasto": 60.51,
+    "imp": 18044,
+    "cliques": 86,
+    "alcance": 10543
+   }
+  },
+  {
+   "faixa": "35-44",
+   "mulheres": {
+    "gasto": 185.9,
+    "imp": 22137,
+    "cliques": 183,
+    "alcance": 8975
+   },
+   "homens": {
+    "gasto": 107.71,
+    "imp": 19160,
+    "cliques": 107,
+    "alcance": 8960
+   }
+  },
+  {
+   "faixa": "45-54",
+   "mulheres": {
+    "gasto": 704.13,
+    "imp": 58982,
+    "cliques": 513,
+    "alcance": 11474
+   },
+   "homens": {
+    "gasto": 345.95,
+    "imp": 41212,
+    "cliques": 256,
+    "alcance": 11053
+   }
+  },
+  {
+   "faixa": "55-64",
+   "mulheres": {
+    "gasto": 466.14,
+    "imp": 42715,
+    "cliques": 540,
+    "alcance": 10054
+   },
+   "homens": {
+    "gasto": 216.82,
+    "imp": 28307,
+    "cliques": 293,
+    "alcance": 7483
+   }
+  },
+  {
+   "faixa": "65+",
+   "mulheres": {
+    "gasto": 332.04,
+    "imp": 27942,
+    "cliques": 489,
+    "alcance": 7435
+   },
+   "homens": {
+    "gasto": 145.46,
+    "imp": 13959,
+    "cliques": 185,
+    "alcance": 4225
+   }
+  }
+ ],
+ "regiao": [
+  {
+   "uf": "Santa Catarina",
+   "gasto": 1812.66,
+   "imp": 206189,
+   "cliques": 1853,
+   "alcance": 62685
+  },
+  {
+   "uf": "Paraná",
+   "gasto": 894.03,
+   "imp": 109266,
+   "cliques": 941,
+   "alcance": 43030
+  }
+ ],
+ "plataforma": [
+  {
+   "nome": "Facebook",
+   "gasto": 1958.89,
+   "imp": 222921,
+   "cliques": 2460,
+   "link": 794
+  },
+  {
+   "nome": "Instagram",
+   "gasto": 555.64,
+   "imp": 83084,
+   "cliques": 231,
+   "link": 132
+  },
+  {
+   "nome": "WhatsApp",
+   "gasto": 192.28,
+   "imp": 9469,
+   "cliques": 103,
+   "link": 96
+  }
+ ]
+}

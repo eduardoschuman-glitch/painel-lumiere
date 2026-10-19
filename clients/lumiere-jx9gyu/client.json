@@ -1,0 +1,12 @@
+{
+ "slug": "lumiere-jx9gyu",
+ "nome": "Instituto Lumière",
+ "objetivo": "mensagens",
+ "corDestaque": "#ce6c8d",
+ "logo": {
+  "escuro": "logo-escuro.svg",
+  "claro": "logo-claro.svg"
+ },
+ "metaCustoResultado": 30,
+ "limiteFrequencia": 3.5
+}
