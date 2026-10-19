@@ -12,7 +12,7 @@ const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',
 
 /* Visões e o que cada uma chama de "resultado" */
 const VISOES={
-  geral:{rotulo:'Visão geral',ordem:0,icone:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>'},
+  geral:{rotulo:'Todos os anúncios',ordem:0,icone:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>'},
   mensagens:{rotulo:'Mensagens',ordem:1,plural:'Conversas',singular:'conversa',kpi:'Conversas iniciadas',icone:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.3A8.4 8.4 0 1 1 21 11.5Z"/></svg>'},
   vendas:{rotulo:'Vendas',ordem:2,plural:'Compras',singular:'compra',kpi:'Compras',icone:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6h15l-1.6 8.2H8z"/><path d="M6 6 5 3H2"/><circle cx="9" cy="19" r="1.5"/><circle cx="18" cy="19" r="1.5"/></svg>'},
   leads:{rotulo:'Leads',ordem:3,plural:'Leads',singular:'lead',kpi:'Leads captados',icone:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg>'}
@@ -52,6 +52,7 @@ function barChart(host,days,vals,{color,fmtTick,fmtTip,label}){
   host.appendChild(svg);
 }
 function spark(vals,color){
+  if(vals.length<2)return ''; // um dia só (início do mês) não forma linha
   const W=120,H=34,max=Math.max(...vals,1),n=vals.length;
   const pts=vals.map((v,i)=>[i/(n-1)*W,H-2-(H-6)*v/max]);
   const d=pts.map((p,i)=>(i?'L':'M')+p[0].toFixed(1)+' '+p[1].toFixed(1)).join(' ');
@@ -86,9 +87,11 @@ function delta(atual,ant,baixo){
 
 /* dados */
 const getJSON=u=>fetch(u,{cache:'no-cache'}).then(r=>{if(!r.ok)throw new Error(u);return r.json()});
+/* períodos: últimos 30 dias (data.json) ou mês atual até o dia da atualização (data-mes.json) */
+const PERIODOS={'30d':{rotulo:'Últimos 30 dias',sufixo:''},mes:{rotulo:'Mês atual',sufixo:'-mes'}};
 async function carregar(slug){
-  const base=`clients/${slug}/`;
-  const [C,D,capas]=await Promise.all([getJSON(base+'client.json'),getJSON(base+'data.json'),getJSON(base+'capas.json').catch(()=>({}))]);
+  const base=`clients/${slug}/`,sf=PERIODOS[estado.periodo].sufixo;
+  const [C,D,capas]=await Promise.all([getJSON(base+'client.json'),getJSON(base+`data${sf}.json`),getJSON(base+`capas${sf}.json`).catch(()=>({}))]);
   return {C,D,base,slug,capas};
 }
 function vazio(msg){app.innerHTML=`<div class="empty"><img src="assets/bussola-mark.svg" alt=""><h1>Bússola</h1><p>${msg}</p></div>`}
@@ -149,7 +152,7 @@ function leitura(V,C,D,O){
   if(R.frequencia&&R.frequencia>=lim)out.push({t:'bad',h:`Frequência alta: ${R.frequencia.toLocaleString('pt-BR',{maximumFractionDigits:1})} impressões por pessoa`,d:`Cada pessoa alcançada viu os anúncios em média ${R.frequencia.toLocaleString('pt-BR',{maximumFractionDigits:1})} vezes (limite de atenção: ${lim.toLocaleString('pt-BR')}). Vale renovar criativos ou ampliar o público.`});
 
   // dias sem entrega
-  const zero=dd.filter(x=>x.gasto<1);
+  const zero=dd.filter((x,i)=>x.gasto<1&&!(D.periodo.parcial&&i===dd.length-1)); // o dia da atualização ainda está em andamento
   if(zero.length)out.push({t:'bad',h:`${zero.length} ${zero.length===1?'dia':'dias'} sem entrega`,d:`Sem investimento em ${zero.map(x=>fmtDay(x.d)).join(' e ')}. Conferir saldo (conta pré-paga) e se os anúncios estavam ativos.`});
 
   // concentração por idade
@@ -165,21 +168,21 @@ function metodologia(O){return `
   <dl>
   <dt>Investimento</dt><dd>Soma do valor gasto nas campanhas no período.</dd>
   <dt>${O.kpi}</dt><dd>Resultado informado pela Meta para o objetivo da campanha (para mensagens, conversas iniciadas, janela padrão de 7 dias após o clique). Mede o início da conversa, não a venda.</dd>
-  <dt>Custo por ${O.singular}</dt><dd>Investimento das campanhas de ${O.plural.toLowerCase()} ÷ ${O.plural.toLowerCase()}. Na visão geral, campanhas de alcance, vídeo e perfil ficam fora desta conta.</dd>
+  <dt>Custo por ${O.singular}</dt><dd>Investimento das campanhas de ${O.plural.toLowerCase()} ÷ ${O.plural.toLowerCase()}. Em todos os anúncios, campanhas de alcance, vídeo e perfil ficam fora desta conta.</dd>
   <dt>Taxa de ${O.singular}</dt><dd>${O.plural} ÷ cliques no link das campanhas de ${O.plural.toLowerCase()}. Diz quantos cliques viram ${O.singular}.</dd>
   <dt>CTR (link)</dt><dd>Cliques no link ÷ impressões. Usamos clique no link e não "todos os cliques", porque este inclui curtidas, perfil e fotos.</dd>
   <dt>CPC (link)</dt><dd>Investimento ÷ cliques no link.</dd>
   <dt>CPM</dt><dd>Investimento ÷ impressões × 1.000.</dd>
   <dt>Alcance e frequência</dt><dd>Alcance é de pessoas únicas na conta inteira (não somamos entre campanhas, senão a mesma pessoa contaria duas vezes). Frequência = impressões ÷ alcance. Na aba de mensagens a frequência aparece por campanha.</dd>
-  <dt>Variações (▲ ▼)</dt><dd>Período atual contra o período anterior de mesma duração. Para custos, cair é bom (verde); para volume, subir é bom.</dd>
+  <dt>Variações (▲ ▼)</dt><dd>Período atual contra o período anterior de mesma duração: nos últimos 30 dias, os 30 dias antes deles; no mês atual, os mesmos dias do mês anterior (por exemplo, 1 a 19 contra 1 a 19). Para custos, cair é bom (verde); para volume, subir é bom.</dd>
   <dt>Leitura do período</dt><dd>Observações geradas por regras sobre os números da tela. Elas descrevem o que aconteceu e não explicam a causa. Anúncios só entram em comparação com 10 ou mais resultados.</dd>
   </dl>`}
 
 /* estado da tela */
 const params=new URLSearchParams(location.search);
 const CLIENTE='lumiere-jx9gyu';
-let estado={slug:CLIENTE,visao:params.get('v')};
-function sincUrl(){const p=new URLSearchParams();if(estado.visao)p.set('v',estado.visao);history.replaceState(null,'','?'+p.toString())}
+let estado={slug:CLIENTE,visao:params.get('v'),periodo:params.get('p')==='mes'?'mes':'30d'};
+function sincUrl(){const p=new URLSearchParams();if(estado.periodo==='mes')p.set('p','mes');if(estado.visao)p.set('v',estado.visao);history.replaceState(null,'','?'+p.toString())}
 
 async function abrir(slug,visao){
   estado.slug=slug;estado.visao=visao||null;
@@ -199,6 +202,7 @@ function render(ctx){
   initTheme(C.tema);
   sincUrl();
 
+  const periodos=`<div class="tabs periodos" role="tablist" aria-label="Período do relatório">${Object.keys(PERIODOS).map(k=>`<button role="tab" class="tab" data-p="${k}" aria-selected="${k===estado.periodo}">${PERIODOS[k].rotulo}</button>`).join('')}</div>`;
   const abas=chaves.length>1?`<div class="tabs" role="tablist" aria-label="Tipo de campanha">${chaves.map(k=>`<button role="tab" class="tab" data-v="${k}" aria-selected="${k===estado.visao}" title="${VISOES[k].rotulo}">${VISOES[k].icone}<span>${VISOES[k].rotulo}</span></button>`).join('')}</div>`:'';
 
   app.innerHTML=`
@@ -208,7 +212,7 @@ function render(ctx){
       <img id="logo" alt="${esc(C.nome)}">
       <span class="cname" id="cname" hidden>${esc(C.nome)}</span>
     </div>
-    <div class="tools">${abas}
+    <div class="tools">${periodos}${abas}
       <button class="iconbtn" id="tema" aria-label="Alternar entre tema claro e escuro" title="Alternar tema"></button>
     </div>
   </div>
@@ -281,7 +285,8 @@ function render(ctx){
   const pintaBtn=()=>{btn.innerHTML=document.documentElement.getAttribute('data-theme')==='light'?ICON_MOON:ICON_SUN};
   pintaBtn();
   btn.onclick=()=>{setTheme(document.documentElement.getAttribute('data-theme')==='light'?'dark':'light',true);pintaBtn();aplicaLogo()};
-  app.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{estado.visao=b.dataset.v;render(ctx)});
+  app.querySelectorAll('.tab[data-v]').forEach(b=>b.onclick=()=>{estado.visao=b.dataset.v;render(ctx)});
+  app.querySelectorAll('.tab[data-p]').forEach(b=>b.onclick=()=>{if(b.dataset.p!==estado.periodo){estado.periodo=b.dataset.p;abrir(estado.slug,estado.visao)}});
 
   /* KPIs: 4 principais + métricas de apoio */
   const dia=k=>V.diario.map(d=>d[k]);

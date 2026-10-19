@@ -233,3 +233,5 @@ footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);font-si
 .ab .pill{align-self:flex-start;margin-left:0}
 .dl .mini{width:28px;height:28px;border-radius:6px;object-fit:cover}
 .dl li{grid-template-columns:10px auto 1fr auto}
+/* seletor de período (só no painel da Lumière): no celular ocupa a linha inteira */
+@media (max-width:520px){.periodos{width:100%}.periodos .tab{flex:1;justify-content:center}}
